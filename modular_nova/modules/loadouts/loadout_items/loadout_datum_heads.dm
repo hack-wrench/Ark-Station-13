@@ -853,10 +853,6 @@
 *	FAMILIES
 */
 
-/datum/loadout_item/head/tmc
-	name = "TMC Hat"
-	item_path = /obj/item/clothing/head/costume/tmc
-
 /datum/loadout_item/head/deckers
 	name = "Deckers Hat"
 	item_path = /obj/item/clothing/head/costume/deckers

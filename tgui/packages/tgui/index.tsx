@@ -7,10 +7,10 @@
 // Themes
 import './styles/main.scss';
 
-import './styles/themes/clockwork.scss'; // NOVA EDIT ADDITION
-import './styles/themes/inteq.scss'; // ARK STATION ADDITION
-import './styles/themes/sex.scss'; // ARK STATION ADDITION
-import './styles/themes/ark_theme.scss'; // ARK STATION ADDITION
+// import './styles/themes/clockwork.scss'; // NOVA EDIT ADDITION
+// import './styles/themes/inteq.scss'; // ARK STATION ADDITION
+// import './styles/themes/sex.scss'; // ARK STATION ADDITION
+// import './styles/themes/ark_theme.scss'; // ARK STATION ADDITION
 
 import { perf } from 'common/perf';
 import { setupGlobalEvents } from 'tgui-core/events';
