@@ -42,27 +42,27 @@
 
 //---------- LIGHTING -------------
 /// Normal 1 per turf dynamic lighting underlays
-#define LIGHTING_PLANE 10
+#define LIGHTING_PLANE 100
 
 // ARK STATION EDIT START
-#define LIGHTING_EXPOSURE_PLANE 10 // Light sources "cones"
-#define LIGHTING_LAMPS_SELFGLOW 10 // Light sources glow (lamps, doors overlay, etc.)
-#define LIGHTING_LAMPS_PLANE 10 // Light sources themselves (lamps, screens, etc.)
-#define LIGHTING_LAMPS_GLARE 10 // Light glare (optional setting)
+#define LIGHTING_EXPOSURE_PLANE 101 // Light sources "cones"
+#define LIGHTING_LAMPS_SELFGLOW 102 // Light sources glow (lamps, doors overlay, etc.)
+#define LIGHTING_LAMPS_PLANE 103 // Light sources themselves (lamps, screens, etc.)
+#define LIGHTING_LAMPS_GLARE 104 // Light glare (optional setting)
 #define LIGHTING_LAMPS_RENDER_TARGET "*LIGHTING_LAMPS_RENDER_TARGET"
 // ARK STATION EDIT END
 
 
 /// Lighting objects that are "free floating"
-#define O_LIGHTING_VISUAL_PLANE 11
+#define O_LIGHTING_VISUAL_PLANE 110
 #define O_LIGHTING_VISUAL_RENDER_TARGET "*O_LIGHT_VISUAL_PLANE"
 
 // Render plate used by overlay lighting to mask turf lights
-#define TURF_LIGHTING_PLATE 12
+#define TURF_LIGHTING_PLATE 120
 
-#define EMISSIVE_PLANE 13
+#define EMISSIVE_PLANE 130
 /// This plane masks out lighting to create an "emissive" effect, ie for glowing lights in otherwise dark areas.
-#define EMISSIVE_RENDER_PLATE 14
+#define EMISSIVE_RENDER_PLATE 140
 #define EMISSIVE_RENDER_TARGET "*EMISSIVE_PLANE"
 // Ensures all the render targets that point at the emissive plate layer correctly
 #define EMISSIVE_Z_BELOW_LAYER 1
@@ -70,73 +70,73 @@
 #define EMISSIVE_SPACE_LAYER 3
 #define EMISSIVE_WALL_LAYER 4
 
-#define EMISSIVE_BLOOM_MASK_PLATE 15
+#define EMISSIVE_BLOOM_MASK_PLATE 150
 #define EMISSIVE_BLOOM_MASK_TARGET "*EMISSIVE_BLOOM_MASK_PLATE"
-#define EMISSIVE_BLOOM_PLATE 16
+#define EMISSIVE_BLOOM_PLATE 160
 
 //-------------------- Game plane assembly ---------------------
 
-#define RENDER_PLANE_GAME 17
+#define RENDER_PLANE_GAME 170
 /// If fov is enabled we'll draw game to this and do shit to it
-#define RENDER_PLANE_GAME_MASKED 18
+#define RENDER_PLANE_GAME_MASKED 180
 /// The bit of the game plane that is let alone is sent here
-#define RENDER_PLANE_GAME_UNMASKED 19
+#define RENDER_PLANE_GAME_UNMASKED 190
 
 //-------------------- Lighting ---------------------
 
-#define RENDER_PLANE_LIGHTING 20
+#define RENDER_PLANE_LIGHTING 200
 
 /// Masks the lighting plane with turfs, so we never light up the void
 /// Failing that, masks emissives and the overlay lighting plane
-#define LIGHT_MASK_PLANE 21
+#define LIGHT_MASK_PLANE 210
 #define LIGHT_MASK_RENDER_TARGET "*LIGHT_MASK_PLANE"
 
 ///Things that should render ignoring lighting
-#define ABOVE_LIGHTING_PLANE 22
+#define ABOVE_LIGHTING_PLANE 220
 
-#define WEATHER_GLOW_PLANE 23
+#define WEATHER_GLOW_PLANE 230
 
 ///---------------- MISC -----------------------
 
 ///Pipecrawling images
-#define PIPECRAWL_IMAGES_PLANE 24
+#define PIPECRAWL_IMAGES_PLANE 240
 
 ///AI Camera Static
-#define CAMERA_STATIC_PLANE 25
+#define CAMERA_STATIC_PLANE 250
 
 ///Anything that wants to be part of the game plane, but also wants to draw above literally everything else
-#define HIGH_GAME_PLANE 26
+#define HIGH_GAME_PLANE 260
 
-#define FULLSCREEN_PLANE 27
+#define FULLSCREEN_PLANE 270
 
 ///--------------- FULLSCREEN RUNECHAT BUBBLES ------------
 
 ///Popup Chat Messages
-#define RUNECHAT_PLANE 30
+#define RUNECHAT_PLANE 300
 /// Plane for balloon text (text that fades up)
-#define BALLOON_CHAT_PLANE 31
+#define BALLOON_CHAT_PLANE 310
 
 //-------------------- HUD ---------------------
 //HUD layer defines
-#define HUD_PLANE 35
-#define ABOVE_HUD_PLANE 36
+#define HUD_PLANE 350
+#define ABOVE_HUD_PLANE 360
 
 ///Plane of the "splash" icon used that shows on the lobby screen
-#define SPLASHSCREEN_PLANE 37
+#define SPLASHSCREEN_PLANE 370
 
 // The largest plane here must still be less than RENDER_PLANE_GAME
 
 //-------------------- Rendering ---------------------
-#define LIT_GAME_RENDER_PLATE 40
-#define RENDER_PLANE_NON_GAME 45
+#define LIT_GAME_RENDER_PLATE 400
+#define RENDER_PLANE_NON_GAME 450
 
 // Only VERY special planes should be here, as they are above not just the game, but the UI planes as well.
 
 /// Plane related to the menu when pressing Escape.
 /// Needed so that we can apply a blur effect to EVERYTHING, and guarantee we are above all UI.
-#define ESCAPE_MENU_PLANE 46
+#define ESCAPE_MENU_PLANE 460
 
-#define RENDER_PLANE_MASTER 50
+#define RENDER_PLANE_MASTER 500
 
 // Lummox I swear to god I will find you
 // NOTE! You can only ever have planes greater then -10000, if you add too many with large offsets you will brick multiz
