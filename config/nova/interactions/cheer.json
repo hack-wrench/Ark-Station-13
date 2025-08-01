@@ -8,7 +8,6 @@
 		"%USER% улыбается, глядя на %TARGET%!"
 	],
 	"sound_use": 0,
-	"sound_possible": [
-	],
+	"sound_possible": [],
 	"sound_range": 7
 }

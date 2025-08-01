@@ -79,7 +79,31 @@
 ///Things that should render ignoring lighting
 #define ABOVE_LIGHTING_PLANE 170 // ARK STATION EDIT - 10X
 
-#define WEATHER_GLOW_PLANE 18
+#define EMISSIVE_BLOOM_MASK_PLATE 15
+#define EMISSIVE_BLOOM_MASK_TARGET "*EMISSIVE_BLOOM_MASK_PLATE"
+#define EMISSIVE_BLOOM_PLATE 16
+
+//-------------------- Game plane assembly ---------------------
+
+#define RENDER_PLANE_GAME 17
+/// If fov is enabled we'll draw game to this and do shit to it
+#define RENDER_PLANE_GAME_MASKED 18
+/// The bit of the game plane that is let alone is sent here
+#define RENDER_PLANE_GAME_UNMASKED 19
+
+//-------------------- Lighting ---------------------
+
+#define RENDER_PLANE_LIGHTING 20
+
+/// Masks the lighting plane with turfs, so we never light up the void
+/// Failing that, masks emissives and the overlay lighting plane
+#define LIGHT_MASK_PLANE 21
+#define LIGHT_MASK_RENDER_TARGET "*LIGHT_MASK_PLANE"
+
+///Things that should render ignoring lighting
+#define ABOVE_LIGHTING_PLANE 22
+
+#define WEATHER_GLOW_PLANE 23
 
 ///---------------- MISC -----------------------
 
@@ -96,6 +120,7 @@
 
 #define SHADOWCASTING_REFLECTOR_PLANE 240 // ARK STATION ADDITION
 #define SHADOWCASTING_PLANE 250 // ARK STATION ADDITION
+
 
 ///--------------- FULLSCREEN RUNECHAT BUBBLES ------------
 
@@ -121,6 +146,7 @@
 /// The bit of the game plane that is let alone is sent here
 #define RENDER_PLANE_GAME_UNMASKED 420 // ARK STATION EDIT - 40X
 #define RENDER_PLANE_NON_GAME 450 // ARK STATION EDIT - 40X
+#define LIT_GAME_RENDER_PLATE 40
 
 // Only VERY special planes should be here, as they are above not just the game, but the UI planes as well.
 

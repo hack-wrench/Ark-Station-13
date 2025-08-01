@@ -46,7 +46,7 @@ ADMIN_VERB_ONLY_CONTEXT_MENU(show_player_panel, R_ADMIN, "Show Player Panel", mo
 			player_ranks += "Mentor"
 
 		// if(SSplayer_ranks.is_veteran(M.client, admin_bypass = FALSE)) // ARK STATION REMOVED
-		// 	player_ranks += "Veteran" // ARK STATION REMOVED
+		// 	player_ranks += "Nova Star" // ARK STATION REMOVED
 
 		body += "<br><br><b>Player Ranks: </b>[length(player_ranks) ? player_ranks.Join(", ") : "None"]"
 		// NOVA EDIT ADDITION END
@@ -371,7 +371,7 @@ ADMIN_VERB(toggle_view_range, R_ADMIN, "Change View Range", "Switch between 1x a
 	if(user.view_size.getView() == user.view_size.default)
 		user.view_size.setTo(input(user, "Select view range:", "FUCK YE", 7) in list(1,2,3,4,5,6,7,8,9,10,11,12,13,14,37) - 7)
 	else
-		user.view_size.resetToDefault(getScreenSize(user.prefs.read_preference(/datum/preference/toggle/widescreen)))
+		user.view_size.resetToDefault()
 
 	log_admin("[key_name(user)] changed their view range to [user.view].")
 	SSblackbox.record_feedback("nested tally", "admin_toggle", 1, list("Change View Range", "[user.view]")) // If you are copy-pasting this, ensure the 4th parameter is unique to the new proc!

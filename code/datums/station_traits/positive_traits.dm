@@ -320,6 +320,8 @@
 		/datum/job/fiscal = /obj/item/organ/cyberimp/brain/anti_drop,
 		/datum/job/synthetic_advisor = /obj/item/organ/cyberimp/arm/toolkit,
 		// ARK STATION ADDITION END
+		/datum/job/bridge_assistant = /obj/item/organ/cyberimp/arm/toolkit/paperwork,
+		// NOVA EDIT ADDITION END
 	)
 
 /datum/station_trait/cybernetic_revolution/New()

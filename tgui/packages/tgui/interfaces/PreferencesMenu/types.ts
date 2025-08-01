@@ -55,6 +55,8 @@ export type Species = {
 
   enabled_features: string[];
 
+  nova_stars_only: boolean; // NOVA EDIT - Nova star quirks
+
   perks: {
     positive: Perk[];
     negative: Perk[];
@@ -81,7 +83,8 @@ export type Department = {
 export type Job = {
   description: string;
   department: string;
-  // SKYRAT EDIT
+  // NOVA EDIT
+  nova_star?: boolean;
   alt_titles?: string[];
   // SKYRAT EDIT END
 };
@@ -93,7 +96,7 @@ export type Quirk = {
   value: number;
   customizable: boolean;
   customization_options?: string[];
-  // veteran_only: boolean; // NOVA EDIT ADDITION - Veteran quirks
+  nova_stars_only: boolean; // NOVA EDIT ADDITION - Nova star quirks
   erp_quirk: boolean; // NOVA EDIT ADDITION - Purple ERP quirks
 };
 
@@ -181,7 +184,7 @@ export type PreferencesMenuData = {
   preview_options: string[]; // NOVA EDIT ADDITION
   preview_selection: string; // NOVA EDIT ADDITION
 
-  // is_veteran: BooleanLike; // NOVA EDIT - Veteran status // ARK STATION REMOVED
+  is_nova_star: BooleanLike; // NOVA EDIT - Star status
   erp_pref: BooleanLike; // NOVA EDIT ADDITION
 
   character_preferences: {
@@ -197,6 +200,7 @@ export type PreferencesMenuData = {
     manually_rendered_features: Record<string, string>;
 
     names: Record<string, string>;
+    vocals: Record<string, string>; // NOVA EDIT ADDITION
 
     misc: {
       gender: Gender;

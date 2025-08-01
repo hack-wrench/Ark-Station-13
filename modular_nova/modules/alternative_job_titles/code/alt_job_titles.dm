@@ -73,6 +73,16 @@
 		"Junior Runner",
 	)
 
+/datum/job/bridge_assistant
+	alt_titles = list(
+		"Bridge Officer",
+		"Command Aide",
+		"Command Cadet",
+		"Bridge Attendant",
+		"Command Secretary",
+		"Command Intern",
+	)
+
 /datum/job/blueshield
 	alt_titles = list(
 		"Blueshield",
@@ -117,6 +127,9 @@
 		"Captain",
 		"Commanding Officer",
 		"Site Manager",
+		"Site Overseer",
+		"Site Director",
+		"Site Administrator",
 		"Station Commander",
 		"Facility Director",
 	)
@@ -176,6 +189,7 @@
 		"Head of Medical",
 		"Head Physician",
 		"Medical Director",
+		"Medical Administrator",
 	)
 
 /datum/job/clown
@@ -275,6 +289,7 @@
 		"Chief Constable",
 		"Chief of Security",
 		"Security Commander",
+		"Security Director",
 		"Sheriff",
 	)
 
@@ -369,6 +384,7 @@
 		"Lead Researcher",
 		"Research Supervisor",
 		"Silicon Administrator",
+		"Research Administrator",
 		"Director of Science",
 	)
 

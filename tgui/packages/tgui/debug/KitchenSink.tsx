@@ -3,14 +3,16 @@
  * @copyright 2020 Aleksej Komarov
  * @license MIT
  */
-
 import { useState } from 'react';
 import { Section, Stack, Tabs } from 'tgui-core/components';
 
 import { useLocalState } from '../backend';
 import { Pane, Window } from '../layouts';
 
-const r = require.context('../stories', false, /\.stories\.tsx$/);
+const r = import.meta.webpackContext('../', {
+  recursive: false,
+  include: /\.stories\.tsx$/,
+});
 
 /**
  * @returns {{
@@ -31,6 +33,10 @@ export function KitchenSink(props) {
   const [pageIndex, setPageIndex] = useState(0);
 
   const stories = getStories();
+  if (stories.length === 0) {
+    return <div>Loading stories...</div>;
+  }
+
   const story = stories[pageIndex];
   const Layout = panel ? Pane : Window;
 
