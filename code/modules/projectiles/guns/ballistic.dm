@@ -315,15 +315,6 @@
 		else if(casing_ejector || !from_firing)
 			casing.forceMove(drop_location()) //Eject casing onto ground.
 			if(!QDELETED(casing))
-		/* // ARK STATION EDIT START
-				casing.bounce_away(TRUE)
-		*/
-				var/bounce_angle
-				if(user)
-					var/sign_x = (istype(user) && !(user.get_held_index_of_item(src) % RIGHT_HANDS)) ? 1 : -1
-					bounce_angle = SIMPLIFY_DEGREES(dir2angle(user.dir) + (sign_x * 90) + rand(-45, 45))
-				casing.bounce_away(bounce_angle = bounce_angle, still_warm = TRUE)
-		// ARK STATION EDIT END
 				SEND_SIGNAL(casing, COMSIG_CASING_EJECTED)
 				var/hitting_ground = TRUE
 				if(ishuman(loc))

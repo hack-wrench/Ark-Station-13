@@ -391,6 +391,33 @@ SOLFED ARMOR VALUES!
 	greyscale_config = /datum/greyscale_config/encryptionkey_syndicate
 	greyscale_colors = "#ebebeb#2b2793"
 
+/obj/item/encryptionkey/headset_solfed/sec
+	name = "\improper SolFed security encryption key"
+	special_channels = RADIO_SPECIAL_CENTCOM
+	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_SECURITY = 1)
+	icon_state = "/obj/item/encryptionkey/headset_solfed/sec"
+	post_init_icon_state = "cypherkey_syndicate"
+	greyscale_config = /datum/greyscale_config/encryptionkey_syndicate
+	greyscale_colors = "#ebebeb#2b2793"
+
+/obj/item/encryptionkey/headset_solfed/med
+	name = "\improper SolFed medical encryption key"
+	special_channels = RADIO_SPECIAL_CENTCOM
+	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_MEDICAL = 1)
+	icon_state = "/obj/item/encryptionkey/headset_solfed/med"
+	post_init_icon_state = "cypherkey_syndicate"
+	greyscale_config = /datum/greyscale_config/encryptionkey_syndicate
+	greyscale_colors = "#ebebeb#2b2793"
+
+/obj/item/encryptionkey/headset_solfed/atmos
+	name = "\improper SolFed engineering encryption key"
+	special_channels = RADIO_SPECIAL_CENTCOM
+	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_ENGINEERING = 1)
+	icon_state = "/obj/item/encryptionkey/headset_solfed/atmos"
+	post_init_icon_state = "cypherkey_syndicate"
+	greyscale_config = /datum/greyscale_config/encryptionkey_syndicate
+	greyscale_colors = "#ebebeb#2b2793"
+
 /obj/item/storage/belt/military/solfed
 	name = "solfed chest rig"
 	desc = "A set of tactical webbing worn by federal military personnel."

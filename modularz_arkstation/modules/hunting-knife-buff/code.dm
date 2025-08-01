@@ -10,11 +10,6 @@
 	else
 		wound_bonus = wound_bonus * 2
 
-	if(bare_wound_bonus <= 0)
-		bare_wound_bonus = 10
-	else
-		bare_wound_bonus = bare_wound_bonus * 2
-
 
 // Bullets
 /obj/projectile/bullet
@@ -30,12 +25,6 @@
 		wound_bonus = 5
 	else
 		wound_bonus = wound_bonus * 2
-
-	if(bare_wound_bonus <= 0)
-		bare_wound_bonus = 10
-	else
-		bare_wound_bonus = bare_wound_bonus * 2
-
 
 /datum/embedding/bullet
 	embed_chance=30 // 20
@@ -53,10 +42,5 @@
 		wound_bonus = 5
 	else
 		wound_bonus = wound_bonus * 2
-
-	if(bare_wound_bonus <= 0)
-		bare_wound_bonus = 10
-	else
-		bare_wound_bonus = bare_wound_bonus * 2
 
 //

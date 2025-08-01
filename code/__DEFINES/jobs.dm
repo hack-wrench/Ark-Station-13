@@ -69,31 +69,31 @@
 #define JOB_SECURITY_OFFICER_ENGINEERING "Red Hawk Private (Orange)" // ARK STATION EDIT || Security Officer (Engineering)
 #define JOB_SECURITY_OFFICER_SCIENCE "Red Hawk Private (Purple)" // ARK STATION EDIT || Security Officer (Science)
 #define JOB_SECURITY_OFFICER_SUPPLY "Red Hawk Private (Brown)" // ARK STATION EDIT || Security Officer (Cargo)
-// #define JOB_CORRECTIONS_OFFICER "Corrections Officer" // NOVA EDIT ADDITION // ARK STATION REMOVED
+#define JOB_CORRECTIONS_OFFICER "Corrections Officer" // NOVA EDIT ADDITION // ARK STATION REMOVED
 //Engineering
 #define JOB_STATION_ENGINEER "Engine Specialist" // ARK STATION EDIT || Station Engineer
 #define JOB_ATMOSPHERIC_TECHNICIAN "Life Support Technician" // ARK STATION EDIT || Atmospheric Technician
 #define JOB_TELECOMMS_SPECIALIST "Telecomms Specialist" // NOVA EDIT ADDITION
-// #define JOB_ENGINEERING_GUARD "Engineering Guard" // NOVA EDIT ADDITION // ARK STATION REMOVED
+#define JOB_ENGINEERING_GUARD "Engineering Guard" // NOVA EDIT ADDITION // ARK STATION REMOVED
 //Medical
 #define JOB_CORONER "Necropsier" // ARK STATION EDIT || Coroner
 #define JOB_MEDICAL_DOCTOR "Physician" // ARK STATION EDIT || Medical Doctor
 #define JOB_PARAMEDIC "Emergency Medical Technician" // ARK STATION EDIT || Paramedic
 #define JOB_CHEMIST "Synthetic Pharmacist" // ARK STATION EDIT || Chemist
 #define JOB_VIROLOGIST "Viral Selectionist" // ARK STATION EDIT || Virologist
-// #define JOB_ORDERLY "Orderly" // NOVA EDIT ADDITION // ARK STATION REMOVED
+#define JOB_ORDERLY "Orderly" // NOVA EDIT ADDITION // ARK STATION REMOVED
 //Science
 #define JOB_SCIENTIST "Researcher" // ARK STATION EDIT || Scientist
 #define JOB_ROBOTICIST "Biomechanical Engineer" // ARK STATION EDIT || Roboticist
 #define JOB_GENETICIST "Bioaugmentator" // ARK STATION EDIT || Geneticist
-//#define JOB_SCIENCE_GUARD "Science Guard" // NOVA EDIT ADDITION // ARK STATION REMOVED
+#define JOB_SCIENCE_GUARD "Science Guard" // NOVA EDIT ADDITION // ARK STATION REMOVED
 //Supply
 #define JOB_QUARTERMASTER "Quartermaster"
 #define JOB_CARGO_TECHNICIAN "Deck Worker" // ARK STATION EDIT || Cargo Technician
 #define JOB_CARGO_GORILLA "Cargo Gorilla"
 #define JOB_SHAFT_MINER "Excavation Specialist" // ARK STATION EDIT || Shaft Miner
 #define JOB_BITRUNNER "Bitrunner"
-// #define JOB_CUSTOMS_AGENT "Customs Agent" // NOVA EDIT ADDITION // ARK STATION REMOVED
+#define JOB_CUSTOMS_AGENT "Customs Agent" // NOVA EDIT ADDITION // ARK STATION REMOVED
 //Service
 #define JOB_BARTENDER "Bartender"
 #define JOB_BOTANIST "Botanist"

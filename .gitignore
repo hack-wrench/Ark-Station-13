@@ -220,6 +220,8 @@ Temporary Items
 
 # TGUI bundles - NOVA EDIT
 /tgui/public/tgui-common.bundle.js
+/tgui/.yarn/*
+/tgui/.pnp.*
 
 # Built auxtools libraries and intermediate files
 aux*.dll

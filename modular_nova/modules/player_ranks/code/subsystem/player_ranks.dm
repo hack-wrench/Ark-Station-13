@@ -89,13 +89,13 @@ SUBSYSTEM_DEF(player_ranks)
  * do not actually possess the role. Defaults to `TRUE`.
  */
 /datum/controller/subsystem/player_ranks/proc/is_nova_star(client/user, admin_bypass = TRUE)
-	return TRUE
-
 	if(!istype(user))
 		CRASH("Invalid user type provided to is_nova_star(), expected 'client' and obtained '[user ? user.type : "null"]'.")
 
 	if(GLOB.nova_star_list[user.ckey])
 		return TRUE
+
+	return TRUE
 
 // 	if(admin_bypass && is_admin(user)) ARK STATION REMOVED
 // 		return TRUE

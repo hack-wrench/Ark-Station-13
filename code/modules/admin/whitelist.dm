@@ -25,35 +25,35 @@ GLOBAL_LIST(whitelist)
 */ // ARK STATION REMOVED || BLUEMOON WHITELIST
 
 // ARK STATION ADDED BELOW || BLUEMOON WHITELIST
-/proc/check_whitelist(key)
-	if(!CONFIG_GET(flag/usewhitelist))
-		log_world("Whitelist disabled in Configs.")
-		log_game("Whitelist disabled in Configs.")
-		return TRUE
+// /proc/check_whitelist(key)
+// 	if(!CONFIG_GET(flag/usewhitelist))
+// 		log_world("Whitelist disabled in Configs.")
+// 		log_game("Whitelist disabled in Configs.")
+// 		return TRUE
 
-	if(!SSdbcore.Connect())
-		log_world("Failed to connect to database in check_whitelist(). Disabling whitelist for current round.")
-		log_game("Failed to connect to database in check_whitelist(). Disabling whitelist for current round.")
-		CONFIG_SET(flag/usewhitelist, FALSE)
-		return TRUE
+// 	if(!SSdbcore.Connect())
+// 		log_world("Failed to connect to database in check_whitelist(). Disabling whitelist for current round.")
+// 		log_game("Failed to connect to database in check_whitelist(). Disabling whitelist for current round.")
+// 		CONFIG_SET(flag/usewhitelist, FALSE)
+// 		return TRUE
 
-	var/datum/db_query/query_get_whitelist = SSdbcore.NewQuery({"
-		SELECT id FROM [format_table_name("whitelist")]
-		WHERE ckey = :ckey
-	"}, list("ckey" = key)
-	)
+// 	var/datum/db_query/query_get_whitelist = SSdbcore.NewQuery({"
+// 		SELECT id FROM [format_table_name("whitelist")]
+// 		WHERE ckey = :ckey
+// 	"}, list("ckey" = key)
+// 	)
 
-	if(!query_get_whitelist.Execute())
-		log_sql("Whitelist check for ckey [key] failed to execute. Rejecting")
-		message_admins("Whitelist check for ckey [key] failed to execute. Rejecting")
-		qdel(query_get_whitelist)
-		return FALSE
+// 	if(!query_get_whitelist.Execute())
+// 		log_sql("Whitelist check for ckey [key] failed to execute. Rejecting")
+// 		message_admins("Whitelist check for ckey [key] failed to execute. Rejecting")
+// 		qdel(query_get_whitelist)
+// 		return FALSE
 
-	var/allow = query_get_whitelist.NextRow()
+// 	var/allow = query_get_whitelist.NextRow()
 
-	qdel(query_get_whitelist)
+// 	qdel(query_get_whitelist)
 
-	return allow
+// 	return allow
 
 /datum/tgs_chat_command/whitelist
 	name = "whitelist"

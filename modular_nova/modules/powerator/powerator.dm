@@ -1,5 +1,3 @@
-//ARK STATION REMOVAL BEGIN
-/*
 #define TECHWEB_NODE_POWERATOR "powerator"
 
 /obj/item/circuitboard/machine/powerator
@@ -242,8 +240,7 @@
 
 	UnregisterSignal(attached_cable, COMSIG_QDELETING)
 	attached_cable = null
-*/
-//ARK STATION REMOVAL END
+
 
 /obj/item/circuitboard/machine/powerator/syndicate
 	name = "\improper Syndicate Powerator"

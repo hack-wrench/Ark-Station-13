@@ -49,7 +49,6 @@
 	attack_verb_continuous = list("chops", "slices", "cuts", "reaps")
 	attack_verb_simple = list("chop", "slice", "cut", "reap")
 	wound_bonus = 0
-	bare_wound_bonus = 0
 
 /obj/item/vorpalscythe/demi/examine(mob/user)
 	. = ..()
