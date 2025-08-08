@@ -332,7 +332,7 @@
 
 /datum/loadout_item/neck/maid
 	name = "Maid Neck Cover"
-	item_path = /obj/item/clothing/neck/maid
+	item_path = /obj/item/clothing/neck/maid_neck_cover
 
 /datum/loadout_item/neck/gags_cloak
 	name = "Cloak (Colorable)"

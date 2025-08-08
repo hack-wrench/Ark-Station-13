@@ -462,7 +462,7 @@
 	if(!SSquirks || !SSquirks.quirks[qname])
 		return FALSE
 	var/datum/quirk/quirk = new quirktype()
-	if(quirk.add_to_holder(new_holder = src, client_source = override_client, unique = add_unique, announce = announce))
+	if(quirk.add_to_holder(new_holder = src, client_source = override_client, unique = add_unique))
 		return TRUE
 	qdel(quirk)
 	return FALSE

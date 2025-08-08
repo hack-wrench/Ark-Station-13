@@ -226,7 +226,7 @@
 /datum/heretic_knowledge/ultimate/moon_final/proc/on_life(mob/living/source, seconds_per_tick, times_fired)
 	SIGNAL_HANDLER
 
-	var/obj/effect/moon_effect = /obj/effect/temp_visual/moon_ringleader
+	// var/obj/effect/moon_effect = /obj/effect/temp_visual/moon_ringleader
 
 	visible_hallucination_pulse(
 		center = get_turf(source),

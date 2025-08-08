@@ -1,3 +1,4 @@
+/*
 #define SOLFED_AMT "amount"
 #define SOLFED_VOTES "votes"
 #define SOLFED_DECLARED "declared"
@@ -655,3 +656,4 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 #undef EMERGENCY_RESPONSE_ATMOS
 #undef EMERGENCY_RESPONSE_EMT
 #undef EMERGENCY_RESPONSE_EMAG
+*/

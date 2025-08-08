@@ -17,10 +17,11 @@ import {
   Stack,
   TextArea, // NOVA EDIT ADDITION
 } from 'tgui-core/components';
-import type { BooleanLike } from 'tgui-core/react';
+import { classes, type BooleanLike } from 'tgui-core/react';
 
 import { createSetPreference, type PreferencesMenuData } from '../../types';
 import { useServerPrefs } from '../../useServerPrefs';
+import { sort } from 'common/collections';
 
 export function sortChoices(array: [string, ReactNode][]) {
   return sortBy(array, [([name]) => name]);
@@ -226,7 +227,7 @@ export const FeatureDropdownInput = (
 
   return serverData.choices.length > 7 ? (
     <StandardizedDropdown
-      choices={sortBy(serverData.choices)}
+      choices={sort(serverData.choices)}
       disabled={props.disabled}
       buttons={props.buttons}
       displayNames={displayNames}
@@ -235,7 +236,7 @@ export const FeatureDropdownInput = (
     />
   ) : (
     <StandardizedChoiceButtons
-      choices={sortBy(serverData.choices)}
+      choices={sort(serverData.choices)}
       disabled={props.disabled}
       displayNames={displayNames}
       onSetValue={props.handleSetValue}
@@ -266,7 +267,7 @@ export const FeatureForcedDropdownInput = (
 
   return (
     <StandardizedDropdown
-      choices={sortBy(serverData.choices)}
+      choices={sort(serverData.choices)}
       disabled={props.disabled}
       buttons={props.buttons}
       displayNames={displayNames}
@@ -340,7 +341,7 @@ export const FeatureIconnedDropdownInput = (
   return (
     <StandardizedDropdown
       buttons={props.buttons}
-      choices={sortBy(serverData.choices)}
+      choices={sort(serverData.choices)}
       displayNames={displayNames}
       onSetValue={props.handleSetValue}
       value={props.value.value}
