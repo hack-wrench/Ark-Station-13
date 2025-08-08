@@ -1,11 +1,11 @@
 import {
-  Feature,
-  FeatureChoiced,
-  FeatureChoicedServerData,
+  type Feature,
+  type FeatureChoiced,
+  type FeatureChoicedServerData,
   FeatureColorInput,
-  FeatureDropdownInput, // ARK STATION EDIT
-  FeatureValueProps,
-} from './base'; // ARK STATION EDIT
+  type FeatureValueProps,
+} from './base';
+import { FeatureDropdownInput } from './dropdowns';
 
 export const eye_color: Feature<string> = {
   name: 'Eye Color', // ARK STATION EDIT

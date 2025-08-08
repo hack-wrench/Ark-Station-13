@@ -54,9 +54,7 @@
 
 /obj/item/circuit_component/mod_program/populate_ports()
 	SHOULD_CALL_PARENT(TRUE)
-
 	. = ..()
-
 	start = add_input_port("Start", PORT_TYPE_SIGNAL, trigger = PROC_REF(start_prog))
 	kill = add_input_port("Kill", PORT_TYPE_SIGNAL, trigger = PROC_REF(kill_prog))
 	running = add_output_port("Running", PORT_TYPE_NUMBER)
