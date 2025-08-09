@@ -21,13 +21,13 @@ $include ark_configs/config_ark.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-# SERVERNAME tgstation
+SERVERNAME [RU] Ark Station 13
 
 ## Server tagline: This will appear right below the server's title.
-# SERVERTAGLINE A generic TG-based server
+# SERVERTAGLINE A more hardcore TG-NOVA-based server
 
 ## Discord Link: This is the link to Nova Sector's discord server
-# DISCORD_LINK https://discord.gg/novasector
+DISCORD_LINK https://discord.gg/pJAZDTJd
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME tgstation
@@ -36,13 +36,13 @@ $include ark_configs/config_ark.txt
 STATIONNAME Space Station 13
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
-#HUB
+HUB
 
 ## Once the server population reaches this number, it will be taken off the byond hub. 0 disables.
 #MAX_HUB_POP 100
 
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
-LOBBY_COUNTDOWN 120
+LOBBY_COUNTDOWN 300
 
 ## Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
 ROUND_END_COUNTDOWN 90
@@ -53,10 +53,10 @@ ROUND_END_COUNTDOWN 90
 ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to stop any admins loaded by the legacy system from having their rank edited by the permissions panel
-#PROTECT_LEGACY_ADMINS
+PROTECT_LEGACY_ADMINS
 
 ##Uncomment this to stop any ranks loaded by the legacy system from having their flags edited by the permissions panel
-#PROTECT_LEGACY_RANKS
+PROTECT_LEGACY_RANKS
 
 ##Uncomment this to have admin ranks only loaded from the legacy admin_ranks.txt
 ##If enabled, each time admins are loaded ranks the database will be updated with the current ranks and their flags
@@ -142,13 +142,13 @@ VOTE_PERIOD 600
 ## 0 = Cannot respawn (default)
 ## 1 = Can respawn
 ## 2 = Can respawn if choosing a different character
-ALLOW_RESPAWN 0
+ALLOW_RESPAWN 2
 
 ## Respawn delay (deciseconds), which doesn't allow to return to lobby
-RESPAWN_DELAY 0
+RESPAWN_DELAY 18000
 
 ## set a hosted by name for unix platforms
-HOSTEDBY Yournamehere
+HOSTEDBY SS13.RU
 
 ## Uncomment this to stop people connecting to your server without a registered ckey. (i.e. guest-* are all blocked from connecting)
 GUEST_BAN
@@ -628,10 +628,10 @@ TOAST_NOTIFICATION_ON_INIT
 CONFIG_ERRORS_RUNTIME
 
 ## Restricts client uploads to the server, defined in bytes, default is 0.5MB
-UPLOAD_LIMIT 524288
+UPLOAD_LIMIT 5242880
 
 ## Restricts admin client uploads to the server, defined in bytes, default is 5MB
-UPLOAD_LIMIT_ADMIN 5242880
+UPLOAD_LIMIT_ADMIN 52428800
 
 ## Uncomment to allow admins with +DEBUG to start the byond-tracy profiler during the round.
 #ALLOW_TRACY_START
