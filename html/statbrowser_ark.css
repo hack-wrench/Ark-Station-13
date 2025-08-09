@@ -201,20 +201,14 @@ img {
  * MARK: Dark theme colors
  */
 .dark:root {
-	--scrollbar-base: #151515;
+    --color-base: #1c1d22;
+	--scrollbar-base: #1c1d22;
 	--scrollbar-thumb: #363636;
 }
 
 body.dark {
 	background-color: #1c1d22;
 	color: #e6f1ff;
-	scrollbar-base-color: #1c1d22;
-	scrollbar-face-color: #2e3138;
-	scrollbar-3dlight-color: #25272d;
-	scrollbar-highlight-color: #25272d;
-	scrollbar-track-color: #1c1d22;
-	scrollbar-arrow-color: #535765;
-	scrollbar-shadow-color: #2e3138;
 }
 
 .dark a {
