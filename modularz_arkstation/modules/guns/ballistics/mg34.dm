@@ -92,7 +92,7 @@
 	max_ammo = 999
 	multiple_sprites = AMMO_BOX_ONE_SPRITE
 
-/obj/item/gun/ballistic/automatic/mg34/packapunch/process_chamber(user = user, empty_chamber, from_firing, chamber_next_round)
+/obj/item/gun/ballistic/automatic/mg34/packapunch/process_chamber(empty_chamber, from_firing, chamber_next_round)
 	. = ..()
 	magazine.top_off()
 

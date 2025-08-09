@@ -257,96 +257,96 @@
 // 	)
 
 //Warden
-/obj/item/clothing/under/rank/security/warden
-	icon = 'modular_nova/master_files/icons/obj/clothing/under/security.dmi'
-	worn_icon = 'modular_nova/master_files/icons/mob/clothing/under/security.dmi'
-	icon_state = "rwarden"
-	uses_advanced_reskins = TRUE
-	unique_reskin = list(
-		"Black-Blue Variant" = list(
-			RESKIN_ICON_STATE = "warden_black",
-			RESKIN_WORN_ICON_STATE = "warden_black"
-		),
-		"White-Blue Variant" = list(
-			RESKIN_ICON_STATE = "wardenblueclothes",
-			RESKIN_WORN_ICON_STATE = "wardenblueclothes"
-		),
-	)
+// /obj/item/clothing/under/rank/security/warden
+// 	icon = 'modular_nova/master_files/icons/obj/clothing/under/security.dmi'
+// 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/under/security.dmi'
+// 	icon_state = "rwarden"
+// 	uses_advanced_reskins = TRUE
+// 	unique_reskin = list(
+// 		"Black-Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "warden_black",
+// 			RESKIN_WORN_ICON_STATE = "warden_black"
+// 		),
+// 		"White-Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "wardenblueclothes",
+// 			RESKIN_WORN_ICON_STATE = "wardenblueclothes"
+// 		),
+// 	)
 
-//HoS
-/obj/item/clothing/under/rank/security/head_of_security
-	icon = 'modular_nova/master_files/icons/obj/clothing/under/security.dmi'
-	worn_icon = 'modular_nova/master_files/icons/mob/clothing/under/security.dmi'
-	icon_state = "rhos"
-	uses_advanced_reskins = TRUE
-	unique_reskin = list(
-		"Black-Blue Variant" = list(
-			RESKIN_ICON_STATE = "hos_black",
-			RESKIN_WORN_ICON_STATE = "hos_black"
-		),
-		"Original Variant" = list(
-			RESKIN_ICON_STATE = "rhos",
-			RESKIN_WORN_ICON_STATE = "rhos"
-		),
-	)
+// //HoS
+// /obj/item/clothing/under/rank/security/head_of_security
+// 	icon = 'modular_nova/master_files/icons/obj/clothing/under/security.dmi'
+// 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/under/security.dmi'
+// 	icon_state = "rhos"
+// 	uses_advanced_reskins = TRUE
+// 	unique_reskin = list(
+// 		"Black-Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "hos_black",
+// 			RESKIN_WORN_ICON_STATE = "hos_black"
+// 		),
+// 		"Original Variant" = list(
+// 			RESKIN_ICON_STATE = "rhos",
+// 			RESKIN_WORN_ICON_STATE = "rhos"
+// 		),
+// 	)
 
-/obj/item/clothing/under/rank/security/head_of_security/parade
-	icon_state = "hos_parade_male"
-	unique_reskin = list(
-		"Blue Variant" = list(
-			RESKIN_ICON_STATE = "hos_parade_male_blue",
-			RESKIN_WORN_ICON_STATE = "hos_parade_male_blue"
-		),
-		"Original Variant" = list(
-			RESKIN_ICON_STATE = "hos_parade_male",
-			RESKIN_WORN_ICON_STATE = "hos_parade_male"
-		),
-	)
+// /obj/item/clothing/under/rank/security/head_of_security/parade
+// 	icon_state = "hos_parade_male"
+// 	unique_reskin = list(
+// 		"Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "hos_parade_male_blue",
+// 			RESKIN_WORN_ICON_STATE = "hos_parade_male_blue"
+// 		),
+// 		"Original Variant" = list(
+// 			RESKIN_ICON_STATE = "hos_parade_male",
+// 			RESKIN_WORN_ICON_STATE = "hos_parade_male"
+// 		),
+// 	)
 
-/obj/item/clothing/under/rank/security/head_of_security/parade/female
-	icon_state = "hos_parade_fem"
-	unique_reskin = list(
-		"Blue Variant" = list(
-			RESKIN_ICON_STATE = "hos_parade_fem_blue",
-			RESKIN_WORN_ICON_STATE = "hos_parade_fem_blue"
-		),
-		"Original Variant" = list(
-			RESKIN_ICON_STATE = "hos_parade_fem",
-			RESKIN_WORN_ICON_STATE = "hos_parade_fem"
-		),
-	)
+// /obj/item/clothing/under/rank/security/head_of_security/parade/female
+// 	icon_state = "hos_parade_fem"
+// 	unique_reskin = list(
+// 		"Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "hos_parade_fem_blue",
+// 			RESKIN_WORN_ICON_STATE = "hos_parade_fem_blue"
+// 		),
+// 		"Original Variant" = list(
+// 			RESKIN_ICON_STATE = "hos_parade_fem",
+// 			RESKIN_WORN_ICON_STATE = "hos_parade_fem"
+// 		),
+// 	)
 
-/obj/item/clothing/under/rank/security/head_of_security/alt
-	icon_state = "hosalt"
-	unique_reskin = list(
-		"Blue Variant" = list(
-			RESKIN_ICON_STATE = "hosalt_blue",
-			RESKIN_WORN_ICON_STATE = "hosalt_blue"
-		),
-		"Original Variant" = list(
-			RESKIN_ICON_STATE = "hosalt",
-			RESKIN_WORN_ICON_STATE = "hosalt"
-		),
-	)
+// /obj/item/clothing/under/rank/security/head_of_security/alt
+// 	icon_state = "hosalt"
+// 	unique_reskin = list(
+// 		"Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "hosalt_blue",
+// 			RESKIN_WORN_ICON_STATE = "hosalt_blue"
+// 		),
+// 		"Original Variant" = list(
+// 			RESKIN_ICON_STATE = "hosalt",
+// 			RESKIN_WORN_ICON_STATE = "hosalt"
+// 		),
+// 	)
 
-/obj/item/clothing/under/rank/security/head_of_security/alt/skirt
-	icon_state = "hosalt_skirt"
-	unique_reskin = list(
-		"Blue Variant" = list(
-			RESKIN_ICON_STATE = "hosalt_skirt_blue",
-			RESKIN_WORN_ICON_STATE = "hosalt_skirt_blue"
-		),
-		"Original Variant" = list(
-			RESKIN_ICON_STATE = "hosalt_skirt",
-			RESKIN_WORN_ICON_STATE = "hosalt_skirt"
-		),
-	)
+// /obj/item/clothing/under/rank/security/head_of_security/alt/skirt
+// 	icon_state = "hosalt_skirt"
+// 	unique_reskin = list(
+// 		"Blue Variant" = list(
+// 			RESKIN_ICON_STATE = "hosalt_skirt_blue",
+// 			RESKIN_WORN_ICON_STATE = "hosalt_skirt_blue"
+// 		),
+// 		"Original Variant" = list(
+// 			RESKIN_ICON_STATE = "hosalt_skirt",
+// 			RESKIN_WORN_ICON_STATE = "hosalt_skirt"
+// 		),
+// 	)
 
-/obj/item/clothing/under/plasmaman/security
-	icon_state = "security_envirosuit" // ARK STATION EDIT || REDSEC
+// /obj/item/clothing/under/plasmaman/security
+// 	icon_state = "security_envirosuit" // ARK STATION EDIT || REDSEC
 
-/obj/item/clothing/under/plasmaman/security/warden
-	icon_state = "warden_envirosuit" // ARK STATION EDIT || REDSEC
+// /obj/item/clothing/under/plasmaman/security/warden
+// 	icon_state = "warden_envirosuit" // ARK STATION EDIT || REDSEC
 
-/obj/item/clothing/under/plasmaman/security/head_of_security
-	icon_state = "hos_envirosuit" // ARK STATION EDIT || REDSEC
+// /obj/item/clothing/under/plasmaman/security/head_of_security
+// 	icon_state = "hos_envirosuit" // ARK STATION EDIT || REDSEC

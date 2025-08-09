@@ -23,7 +23,7 @@
 	if (bolt_locked == FALSE)
 		balloon_alert(user, "bolt opened")
 		playsound(src, rack_sound, rack_sound_volume, rack_sound_vary)
-		process_chamber(user = user, empty_chamber = FALSE, from_firing = FALSE, chamber_next_round = FALSE) // ARK STATION EDIT
+		process_chamber(empty_chamber = FALSE, from_firing = FALSE, chamber_next_round = FALSE)
 		bolt_locked = TRUE
 		update_appearance()
 		return

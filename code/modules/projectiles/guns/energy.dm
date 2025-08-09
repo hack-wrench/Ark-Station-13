@@ -216,12 +216,12 @@
 
 /obj/item/gun/energy/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 	if(!chambered && can_shoot())
-		process_chamber(user = user) // ARK STATION EDIT // If the gun was drained and then recharged, load a new shot.
+		process_chamber() // If the gun was drained and then recharged, load a new shot.
 	return ..()
 
 /obj/item/gun/energy/process_burst(mob/living/user, atom/target, message = TRUE, params = null, zone_override="", randomized_gun_spread = 0, randomized_bonus_spread = 0, rand_spr = 0, iteration = 0)
 	if(!chambered && can_shoot())
-		process_chamber(user = user) // ARK STATION EDIT // Ditto.
+		process_chamber() // Ditto.
 	return ..()
 
 /obj/item/gun/energy/proc/select_fire(mob/living/user)

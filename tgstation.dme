@@ -9404,7 +9404,6 @@
 #include "modularz_arkstation\_master_files\code\modules\omega_station\generator.dm"
 #include "modularz_arkstation\_master_files\code\modules\omega_station\ruins.dm"
 #include "modularz_arkstation\_master_files\code\modules\omega_station\weather.dm"
-#include "modularz_arkstation\_master_files\code\modules\projectiles\gun.dm"
 #include "modularz_arkstation\_master_files\code\modules\projectiles\ammunition\_ammunition.dm"
 #include "modularz_arkstation\_master_files\code\modules\projectiles\boxes_magazines\_box_magazine.dm"
 #include "modularz_arkstation\_master_files\code\modules\quirks\code\negative_quirks\well_trained.dm"

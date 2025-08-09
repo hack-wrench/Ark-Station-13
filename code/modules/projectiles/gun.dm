@@ -191,14 +191,13 @@
 			. += span_boldwarning("It's falling apart!")
 
 //called after the gun has successfully fired its chambered ammo.
-/* // ARK STATION OVERRIDED IN - modularz_arkstation\_master_files\code\modules\projectiles\gun.dm
 /obj/item/gun/proc/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
 	handle_chamber(empty_chamber, from_firing, chamber_next_round)
 	SEND_SIGNAL(src, COMSIG_GUN_CHAMBER_PROCESSED)
 
 /obj/item/gun/proc/handle_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
 	return
-*/ // ARK STATION OVERRIDE END
+
 
 //check if there's enough ammo/energy/whatever to shoot one time
 //i.e if clicking would make it shoot
@@ -496,7 +495,7 @@
 		shoot_with_empty_chamber(user)
 		firing_burst = FALSE
 		return FALSE
-	process_chamber(user = user) // ARK STATION EDIT
+	process_chamber()
 	update_appearance()
 	return TRUE
 
@@ -555,7 +554,7 @@
 			return
 		// If gun gets destroyed as a result of firing
 		if (!QDELETED(src))
-			process_chamber(user = user) // ARK STATION EDIT
+			process_chamber()
 			update_appearance()
 			fire_cd = TRUE
 			addtimer(CALLBACK(src, PROC_REF(reset_fire_cd)), modified_fire_delay)

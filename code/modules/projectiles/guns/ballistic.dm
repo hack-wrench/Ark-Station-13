@@ -429,7 +429,7 @@
 		bolt_locked = FALSE
 	if (user)
 		balloon_alert(user, "[bolt_wording] racked")
-	process_chamber(user = user, empty_chamber = !chambered, from_firing = FALSE) // process_chamber(!chambered, FALSE) // ARK STATION EDIT
+	process_chamber(!chambered, FALSE)
 	if (bolt_type == BOLT_TYPE_LOCKING && !chambered)
 		bolt_locked = TRUE
 		playsound(src, lock_back_sound, lock_back_sound_volume, lock_back_sound_vary)
