@@ -14,7 +14,7 @@
 	/// Whether the mob is pixel shifted or not
 	var/is_shifted = FALSE
 	/// If we are in the shifting setting.
-	var/shifting = TRUE
+	var/shifting = FALSE
 	/// Takes the four cardinal direction defines. Any atoms moving into this atom's tile will be allowed to from the added directions.
 	var/passthroughable = NONE
 	/// The maximum amount of pixels allowed to move in the turf.
@@ -35,13 +35,11 @@
 	//ARK STATION EDIT: START
 	RegisterSignal(parent, COMSIG_KB_MOB_ITEM_PIXEL_SHIFT_DOWN, PROC_REF(item_pixel_shift_down))
 	RegisterSignal(parent, COMSIG_KB_MOB_ITEM_PIXEL_SHIFT_UP, PROC_REF(item_pixel_shift_up))
-	//ARK STATION EDIT: END
-	RegisterSignal(parent, COMSIG_KB_MOB_PIXEL_SHIFT_DOWN, PROC_REF(pixel_shift_down))
-	RegisterSignal(parent, COMSIG_KB_MOB_PIXEL_SHIFT_UP, PROC_REF(pixel_shift_up))
-	//ARK STATION EDIT: START
 	RegisterSignal(parent, COMSIG_KB_MOB_PIXEL_TILT_DOWN, PROC_REF(pixel_tilt_down))
 	RegisterSignal(parent, COMSIG_KB_MOB_PIXEL_TILT_UP, PROC_REF(pixel_tilt_up))
 	//ARK STATION EDIT: END
+	RegisterSignal(parent, COMSIG_KB_MOB_PIXEL_SHIFT_DOWN, PROC_REF(pixel_shift_down))
+	RegisterSignal(parent, COMSIG_KB_MOB_PIXEL_SHIFT_UP, PROC_REF(pixel_shift_up))
 	RegisterSignals(parent, list(COMSIG_LIVING_RESET_PULL_OFFSETS, COMSIG_LIVING_SET_PULL_OFFSET, COMSIG_MOVABLE_MOVED), PROC_REF(unpixel_shift))
 	RegisterSignal(parent, COMSIG_MOB_CLIENT_PRE_LIVING_MOVE, PROC_REF(pre_move_check))
 	RegisterSignal(parent, COMSIG_LIVING_CAN_ALLOW_THROUGH, PROC_REF(check_passable))
@@ -55,7 +53,6 @@
 	//ARK STATION EDIT: END
 	UnregisterSignal(parent, COMSIG_KB_MOB_PIXEL_SHIFT_DOWN)
 	UnregisterSignal(parent, COMSIG_KB_MOB_PIXEL_SHIFT_UP)
-	UnregisterSignal(parent, COMSIG_MOB_CLIENT_PRE_LIVING_MOVE) //ARK STATION EDIT
 	UnregisterSignal(parent, COMSIG_LIVING_RESET_PULL_OFFSETS)
 	UnregisterSignal(parent, COMSIG_LIVING_SET_PULL_OFFSET)
 	UnregisterSignal(parent, COMSIG_MOVABLE_MOVED)
@@ -190,8 +187,8 @@
 					pixel_shift_y--
 					is_shifted = TRUE
 			if(WEST)
-				if(owner.pixel_x >= -maximum_pixel_shift + owner.base_pixel_x)
-					owner.pixel_x--
+				if(pixel_shift_x >= -maximum_pixel_shift + owner.base_pixel_x)
+					pixel_shift_x--
 					is_shifted = TRUE
 	//ARK STATION EDIT:END
 
