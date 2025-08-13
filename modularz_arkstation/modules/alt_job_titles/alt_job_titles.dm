@@ -7,20 +7,16 @@
 
 /datum/job/assistant
 	alt_titles = list(
-		"Colonist",
 		"Assistant",
-		"Artist",
-		"Businessman",
-		"Businesswoman",
-		"Civilian",
-		"Entertainer",
-		"Freelancer",
 		"Tourist",
-		"Trader",
+		"Traveler",
+		"Life Coach",
+		"Hollywood Actor",
+		"Artist",
+		"Food Critic",
+		"Influencer",
 		"Off-Duty Crew",
 		"Off-Duty Staff",
-		"Musician",
-		"Contractor",
 	)
 
 /datum/job/atmospheric_technician
