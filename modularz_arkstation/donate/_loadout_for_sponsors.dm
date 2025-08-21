@@ -75,3 +75,9 @@
 	name = "Demi's Scythe"
 	item_path = /obj/item/organ/cyberimp/arm/toolkit/shard/scythe/demi
 	ckeywhitelist = list("Krashly", "No_Terra-Vi-Ja")
+
+/datum/loadout_item/whitelisted/criminalityplayer_mask
+	name = "Steel Mask"
+	item_path = /obj/item/clothing/mask/medieval
+	ckeywhitelist = list("Criminality_Player")
+
